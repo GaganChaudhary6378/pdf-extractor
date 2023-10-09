@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# PDF Extractor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application allows users to upload PDF files, view a simplified version of the PDF, and extract specific pages from it.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To get started with this project, follow these steps:
 
-### `npm start`
+### Clone the Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+git clone https://github.com/GaganChaudhary6378/pdf-extractor.git
+cd pdf-extractor
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Install Dependencies
 
-### `npm test`
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Start the Project
 
-### `npm run build`
+```bash
+npm run start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The web application will be accessible in your web browser at http://localhost:3000 (or a different port if specified).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+PDF Extractor provides the following functionality:
 
-### `npm run eject`
+***Upload PDF***: Users can upload a PDF file of their choice.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+***View PDF***: After uploading the PDF, the application displays a simplified view of the PDF on the same page using the pdf-lib library.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+***Extract Pages***: Users can extract specific pages from the PDF by:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Entering a single page number (e.g., 5).
+- Specifying a range of pages (e.g., 1-8).
+- Selecting random pages (e.g., 1, 5, 8).
+  
+Generate New PDF: When the user clicks on the "Extract" button, a new PDF containing the selected pages will be generated and made available for download.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Preview 
 
-## Learn More
+***Upload Pdf***
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://github.com/GaganChaudhary6378/pdf-extractor/assets/100700883/c806a64b-af76-437d-acf8-8539af0717c6)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+***Extract Pages***
 
-### Code Splitting
+![image](https://github.com/GaganChaudhary6378/pdf-extractor/assets/100700883/6f574dc4-b6ce-4820-abaf-613d2326b921)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+***Final Extracted Pdf***
 
-### Analyzing the Bundle Size
+![image](https://github.com/GaganChaudhary6378/pdf-extractor/assets/100700883/dc40967d-6e85-4d91-b681-54d084a59d3e)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
