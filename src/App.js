@@ -107,7 +107,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-blue-500 py-4 text-white text-center">
+      <div className="bg-yellow-500 py-4 text-white text-center">
         <h1 className="text-2xl font-semibold">PDF Page Extractor</h1>
       </div>
       <div className="container mx-auto mt-8 p-4">
@@ -134,7 +134,7 @@ export default function Home() {
         </div>
         <button
           onClick={handleExtractPages}
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          className="bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600"
         >
           Extract Pages
         </button>
